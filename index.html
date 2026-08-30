@@ -1,268 +1,255 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Molly Crossman | Portfolio</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Georgia, serif; color: #333; }
-        
-        nav {
-            background-color: #003087;
-            padding: 15px 40px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            gap: 30px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            letter-spacing: 1px;
-        }
-        nav a:hover { text-decoration: underline; }
-
-        section {
-            padding: 60px 10%;
-            min-height: 100vh;
-        }
-
-        /* ABOUT */
-        #about {
-            background-color: #f9f9f9;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        #about img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 4px solid #003087;
-        }
-        #about h1 { font-size: 36px; margin-bottom: 10px; }
-        #about .quote {
-            font-style: italic;
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        #about p {
-            max-width: 700px;
-            line-height: 1.8;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-        #about .email {
-            margin-top: 10px;
-            font-size: 16px;
-            color: #003087;
-        }
-
-        /* RESEARCH */
-        #research { background-color: #ffffff; }
-        #research h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
-            color: #003087;
-            border-bottom: 2px solid #003087;
-            padding-bottom: 10px;
-        }
-        #research img {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 8px;
-            margin: 20px 0;
-            display: block;
-        }
-        #research p, #research li {
-            line-height: 1.8;
-            font-size: 16px;
-            margin-bottom: 12px;
-        }
-        #research .meta {
-            background: #f0f4ff;
-            padding: 15px 20px;
-            border-left: 4px solid #003087;
-            margin-bottom: 20px;
-            border-radius: 4px;
-        }
-
-        /* COURSEWORK */
-        #coursework { background-color: #f9f9f9; }
-        #coursework h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
-            color: #003087;
-            border-bottom: 2px solid #003087;
-            padding-bottom: 10px;
-        }
-        #coursework ul {
-            list-style: none;
-            padding: 0;
-        }
-        #coursework ul li {
-            padding: 8px 0;
-            font-size: 16px;
-            border-bottom: 1px solid #ddd;
-        }
-        #coursework h3 {
-            margin: 20px 0 10px;
-            color: #003087;
-        }
-
-        /* CV */
-        #cv { background-color: #ffffff; }
-        #cv h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
-            color: #003087;
-            border-bottom: 2px solid #003087;
-            padding-bottom: 10px;
-        }
-        .download-btn {
-            display: inline-block;
-            background-color: #003087;
-            color: white;
-            padding: 14px 30px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 16px;
-            margin-bottom: 40px;
-        }
-        .download-btn:hover { background-color: #0051c7; }
-        .featured {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .featured-card {
-            background: #f0f4ff;
-            border-left: 4px solid #003087;
-            padding: 20px;
-            border-radius: 6px;
-        }
-        .featured-card h3 {
-            color: #003087;
-            margin-bottom: 10px;
-        }
-        .featured-card p, .featured-card li {
-            font-size: 15px;
-            line-height: 1.7;
-        }
-        .featured-card ul { padding-left: 18px; }
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
 </head>
 <body>
-
-<!-- NAVIGATION -->
-<nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#coursework">Coursework</a>
-    <a href="#cv">CV/Resume</a>
-</nav>
-
-<!-- ABOUT -->
-<section id="about">
-    <img src="headshot.jpg" alt="Molly Crossman">
-    <h1>Molly Crossman</h1>
-    <p class="quote">"Driven by curiosity, grounded in experiment."</p>
-    <p>
-        I am a senior at the University of Florida pursuing dual Bachelor of Science 
-        degrees in Physics and Mathematics. My academic journey began early — completing 
-        my AA at Daytona State College allowed me to dive into upper-level coursework 
-        from my first semester at UF, accelerating my path into research. I am currently 
-        a member of the Hamlin Lab in the UF Physics department, where I work on 
-        experimental condensed matter physics. My day-to-day research involves growing 
-        single crystals, collecting X-ray diffraction (XRD) measurements, and keeping 
-        the lab running through hands-on equipment troubleshooting. I plan to continue 
-        this work at the graduate level, with the goal of pursuing a PhD in condensed 
-        matter physics.
-    </p>
-    <p class="email">📧 <a href="mailto:m.crossman@ufl.edu">m.crossman@ufl.edu</a></p>
-</section>
-
-<!-- RESEARCH -->
-<section id="research">
-    <h2>Research</h2>
-    <h3>Undergraduate Research in Experimental Condensed Matter Physics</h3>
-    <div class="meta">
-        <p><strong>PI:</strong> Dr. James J. Hamlin</p>
-        <p><strong>Institution:</strong> University of Florida, Department of Physics</p>
-        <p><strong>Duration:</strong> October 2024 – Present</p>
-    </div>
-    <p>
-        My research in the Hamlin Lab sits at the intersection of materials synthesis 
-        and experimental condensed matter physics. The lab focuses on growing and 
-        characterizing novel crystalline materials, with the goal of understanding 
-        their physical properties under various conditions including extreme pressures 
-        and low temperatures.
-    </p>
-    <p>
-        My work in the lab involves the full pipeline from synthesis to characterization. 
-        I grow crystals using multiple techniques including Chemical Vapor Transport (CVT), 
-        Arc Melting, and Flux Growth methods. I then measure the properties of these 
-        materials using X-ray diffraction (XRD) and other characterization tools. 
-        A significant part of my role also involves hands-on troubleshooting and 
-        maintenance of lab equipment to keep experiments running.
-    </p>
-    <img src="crystal.jpg" alt="Crystal sample under microscope">
-</section>
-
-<!-- COURSEWORK -->
-<section id="coursework">
-    <h2>Coursework</h2>
-    <h3>Degrees</h3>
-    <p>B.S. Physics | B.S. Mathematics — University of Florida</p>
-    <h3>Relevant Courses</h3>
-    <ul>
-        <li>Statistical Mechanics I</li>
-        <li>Introduction to Quantum Mechanics II</li>
-        <li>Introduction to Solid State Physics</li>
-        <li>Introduction to Partial Differential Equations</li>
-        <li>Linear Algebra</li>
-        <li>Special Topics: Computational Chemistry</li>
-        <li>Special Topics: Spin Dynamics / Quantum Computing</li>
-    </ul>
-</section>
-
-<!-- CV -->
-<section id="cv">
-    <h2>CV / Resume</h2>
-    <a class="download-btn" href="cv.pdf" download>⬇ Download Full CV (PDF)</a>
-    <div class="featured">
-        <div class="featured-card">
-            <h3>Research Experience</h3>
-            <ul>
-                <li>Hamlin Lab, UF — Crystal Synthesis & Property Measurement (Oct 2024–Present)</li>
-                <li>REU, Penn State — Topological Insulator Characterization (May–July 2025)</li>
-            </ul>
-        </div>
-        <div class="featured-card">
-            <h3>Education</h3>
-            <ul>
-                <li>B.S. Physics & B.S. Math, University of Florida (GPA: 3.67)</li>
-                <li>A.A. Daytona State College (GPA: 4.00)</li>
-            </ul>
-        </div>
-        <div class="featured-card">
-            <h3>Awards</h3>
-            <ul>
-                <li>Daytona State Hall of Fame (2023)</li>
-                <li>Mathematics Outstanding Student Award (2023)</li>
-                <li>Bright Futures — Florida Academic Scholars</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Molly Crossman | Portfolio&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* { margin: 0; padding: 0; box-sizing: border-box; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: Georgia, serif; color: #333; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: sticky;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 100;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a:hover { text-decoration: underline; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 60px 10%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* ABOUT */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#about {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#about img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 4px solid #003087;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#about h1 { font-size: 36px; margin-bottom: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#about .quote {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#about p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 700px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#about .email {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003087;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* RESEARCH */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#research { background-color: #ffffff; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#research h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#research img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#research p, #research li {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#research .meta {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f0f4ff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* COURSEWORK */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#coursework { background-color: #f9f9f9; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#coursework h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#coursework ul {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#coursework ul li {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#coursework h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003087;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* CV */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#cv { background-color: #ffffff; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#cv h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.download-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 14px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.download-btn:hover { background-color: #0051c7; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.featured {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.featured-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f0f4ff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.featured-card h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003087;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.featured-card p, .featured-card li {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.7;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.featured-card ul { padding-left: 18px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;!-- NAVIGATION --&gt;</p>
+<p class="p1">&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#about"&gt;About&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#research"&gt;Research&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#coursework"&gt;Coursework&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#cv"&gt;CV/Resume&lt;/a&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;!-- ABOUT --&gt;</p>
+<p class="p1">&lt;section id="about"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="headshot.jpg" alt="Molly Crossman"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Molly Crossman&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="quote"&gt;Physics BS and Math BS at University of Florida doing research in condensed matter physics&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>I am a senior at the University of Florida pursuing dual Bachelor of Science</p>
+<p class="p1"><span class="Apple-converted-space">        </span>degrees in Physics and Mathematics. My academic journey began early, completing</p>
+<p class="p1"><span class="Apple-converted-space">        </span>my AA in high school allowed me to dive into upper-level coursework</p>
+<p class="p1"><span class="Apple-converted-space">        </span>from my first semester at UF, accelerating my path into research. I am currently</p>
+<p class="p1"><span class="Apple-converted-space">        </span>a member of the Hamlin Lab in the UF Physics department, where I work in</p>
+<p class="p1"><span class="Apple-converted-space">        </span>experimental condensed matter physics. My research involves growing crystals</p>
+<p class="p1"><span class="Apple-converted-space">        </span>and taking measurements on them. I plan to continue in this line of work at</p>
+<p class="p1"><span class="Apple-converted-space">        </span>the graduate level, with the goal of pursuing a PhD in condensed matter physics.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="email"&gt;📧 &lt;a href="mailto:m.crossman@ufl.edu"&gt;m.crossman@ufl.edu&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- RESEARCH --&gt;</p>
+<p class="p1">&lt;section id="research"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Research&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Undergraduate Research in Experimental Condensed Matter Physics&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="meta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;strong&gt;PI:&lt;/strong&gt; Dr. James J. Hamlin&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;strong&gt;Institution:&lt;/strong&gt; University of Florida, Department of Physics&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;strong&gt;Duration:&lt;/strong&gt; October 2024 – Present&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>The Hamlin Lab focuses on growing and characterizing novel crystalline</p>
+<p class="p1"><span class="Apple-converted-space">        </span>materials to understand their physical properties under extreme conditions,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>including high pressures and low temperatures.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>I grow single crystals using flux growth methods and characterize them</p>
+<p class="p1"><span class="Apple-converted-space">        </span>through X-ray diffraction (XRD), resistivity measurements, and other</p>
+<p class="p1"><span class="Apple-converted-space">        </span>property measurements. I also keep up with equipment maintenance and</p>
+<p class="p1"><span class="Apple-converted-space">        </span>repairs as needed.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="crystal.jpg" alt="Crystal sample under microscope"&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- COURSEWORK --&gt;</p>
+<p class="p1">&lt;section id="coursework"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Coursework&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Degrees&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;B.S. Physics | B.S. Mathematics — University of Florida&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Relevant Courses&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Statistical Mechanics I&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Introduction to Quantum Mechanics II&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Introduction to Solid State Physics&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- CV --&gt;</p>
+<p class="p1">&lt;section id="cv"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;CV / Resume&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="download-btn" href="cv.pdf" download&gt;⬇ Download Full CV (PDF)&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="featured"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="featured-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Research Experience&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Hamlin Lab, UF — Crystal Synthesis &amp; Property Measurement (Oct 2024–Present)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;REU, Penn State — Topological Insulator Characterization (May–July 2025)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="featured-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Education&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;B.S. Physics &amp; B.S. Math, University of Florida&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;A.A. Daytona State College&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
