@@ -1,107 +1,239 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molly Crossman | Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Georgia, serif; color: #333; }
+
+        nav {
+            background-color: #003087;
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        nav a:hover { text-decoration: underline; }
+        section {
+            padding: 60px 10%;
+            min-height: 100vh;
+        }
+        /* ABOUT */
+        #about {
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        #about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #003087;
+        }
+        #about h1 { font-size: 36px; margin-bottom: 10px; }
+        #about .quote {
+            font-style: italic;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        #about p {
+            max-width: 700px;
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        #about .email {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #003087;
+        }
+        /* RESEARCH */
+        #research { background-color: #ffffff; }
+        #research h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #003087;
+            border-bottom: 2px solid #003087;
+            padding-bottom: 10px;
+        }
+        #research img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin: 20px 0;
+            display: block;
+        }
+        #research p, #research li {
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        #research .meta {
+            background: #f0f4ff;
+            padding: 15px 20px;
+            border-left: 4px solid #003087;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        /* COURSEWORK */
+        #coursework { background-color: #f9f9f9; }
+        #coursework h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #003087;
+            border-bottom: 2px solid #003087;
+            padding-bottom: 10px;
+        }
+        #coursework ul {
+            list-style: none;
+            padding: 0;
+        }
+        #coursework ul li {
+            padding: 8px 0;
+            font-size: 16px;
+            border-bottom: 1px solid #ddd;
+        }
+        #coursework h3 {
+            margin: 20px 0 10px;
+            color: #003087;
+        }
+        /* CV */
+        #cv { background-color: #ffffff; }
+        #cv h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #003087;
+            border-bottom: 2px solid #003087;
+            padding-bottom: 10px;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #003087;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        .download-btn:hover { background-color: #0051c7; }
+        .featured {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .featured-card {
+            background: #f0f4ff;
+            border-left: 4px solid #003087;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .featured-card h3 {
+            color: #003087;
+            margin-bottom: 10px;
+        }
+        .featured-card p, .featured-card li {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .featured-card ul { padding-left: 18px; }
+    </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">font-size: 15px;</span></p>
-<p class="p1"><span class="s1">line-height: 1.7;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.featured-card ul { padding-left: 18px; }</span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;!-- NAVIGATION --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;nav&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="#about"&gt;About&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="#research"&gt;Research&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="#coursework"&gt;Coursework&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="#cv"&gt;CV/Resume&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
-<p class="p1"><span class="s1">&lt;!-- ABOUT --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;section id="about"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;img src="headshot.jpg" alt="Molly Crossman"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h1&gt;Molly Crossman&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p class="quote"&gt;Physics BS and Math BS at University of Florida doing research in condensed matter physics&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;</span></p>
-<p class="p1"><span class="s1">I am a senior at the University of Florida pursuing dual Bachelor of Science</span></p>
-<p class="p1"><span class="s1">degrees in Physics and Mathematics. My academic journey began early, completing</span></p>
-<p class="p1"><span class="s1">my AA in high school allowed me to dive into upper-level coursework</span></p>
-<p class="p1"><span class="s1">from my first semester at UF, accelerating my path into research. I am currently</span></p>
-<p class="p1"><span class="s1">a member of the Hamlin Lab in the UF Physics department, where I work in</span></p>
-<p class="p1"><span class="s1">experimental condensed matter physics. My research involves growing crystals</span></p>
-<p class="p1"><span class="s1">and taking measurements on them. I plan to continue in this line of work at</span></p>
-<p class="p1"><span class="s1">the graduate level, with the goal of pursuing a PhD in condensed matter physics.</span></p>
-<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p class="email"&gt;📧 &lt;a href="mailto:m.crossman@ufl.edu"&gt;m.crossman@ufl.edu&lt;/a&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1">&lt;!-- RESEARCH --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;section id="research"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h2&gt;Research&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h3&gt;Undergraduate Research in Experimental Condensed Matter Physics&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="meta"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;&lt;strong&gt;PI:&lt;/strong&gt; Dr. James J. Hamlin&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;&lt;strong&gt;Institution:&lt;/strong&gt; University of Florida, Department of Physics&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;&lt;strong&gt;Duration:&lt;/strong&gt; October 2024 – Present&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;</span></p>
-<p class="p1"><span class="s1">The Hamlin Lab focuses on growing and characterizing novel crystalline</span></p>
-<p class="p1"><span class="s1">materials to understand their physical properties under extreme conditions,</span></p>
-<p class="p1"><span class="s1">including high pressures and low temperatures.</span></p>
-<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;</span></p>
-<p class="p1"><span class="s1">I grow single crystals using flux growth methods and characterize them</span></p>
-<p class="p1"><span class="s1">through X-ray diffraction (XRD), resistivity measurements, and other</span></p>
-<p class="p1"><span class="s1">property measurements. I also keep up with equipment maintenance and</span></p>
-<p class="p1"><span class="s1">repairs as needed.</span></p>
-<p class="p1"><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;img src="crystal.jpg" alt="Crystal sample under microscope"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1">&lt;!-- COURSEWORK --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;section id="coursework"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h2&gt;Coursework&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h3&gt;Degrees&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;B.S. Physics | B.S. Mathematics — University of Florida&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h3&gt;Relevant Courses&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1">&lt;ul&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;Statistical Mechanics I&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;Introduction to Quantum Mechanics II&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;Introduction to Solid State Physics&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1">&lt;!-- CV --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;section id="cv"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h2&gt;CV / Resume&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a class="download-btn" href="cv.pdf" download&gt;⬇ Download Full CV (PDF)&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="featured"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="featured-card"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h3&gt;Research Experience&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1">&lt;ul&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;Hamlin Lab, UF — Crystal Synthesis &amp; Property Measurement (Oct 2024–Present)&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;REU, Penn State — Topological Insulator Characterization (May–July 2025)&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="featured-card"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h3&gt;Education&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1">&lt;ul&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;B.S. Physics &amp; B.S. Math, University of Florida&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;A.A. Daytona State College&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<!-- NAVIGATION -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#coursework">Coursework</a>
+    <a href="#cv">CV/Resume</a>
+</nav>
+<!-- ABOUT -->
+<section id="about">
+    <img src="headshot.jpg" alt="Molly Crossman">
+    <h1>Molly Crossman</h1>
+    <p class="quote">Physics BS and Math BS at University of Florida doing research in condensed matter physics</p>
+    <p>
+        I am a senior at the University of Florida pursuing dual Bachelor of Science
+        degrees in Physics and Mathematics. My academic journey began early, completing
+        my AA in high school allowed me to dive into upper-level coursework
+        from my first semester at UF, accelerating my path into research. I am currently
+        a member of the Hamlin Lab in the UF Physics department, where I work in
+        experimental condensed matter physics. My research involves growing crystals
+        and taking measurements on them. I plan to continue in this line of work at
+        the graduate level, with the goal of pursuing a PhD in condensed matter physics.
+    </p>
+    <p class="email">📧 <a href="mailto:m.crossman@ufl.edu">m.crossman@ufl.edu</a></p>
+</section>
+<!-- RESEARCH -->
+<section id="research">
+    <h2>Research</h2>
+    <h3>Undergraduate Research in Experimental Condensed Matter Physics</h3>
+    <div class="meta">
+        <p><strong>PI:</strong> Dr. James J. Hamlin</p>
+        <p><strong>Institution:</strong> University of Florida, Department of Physics</p>
+        <p><strong>Duration:</strong> October 2024 – Present</p>
+    </div>
+    <p>
+        The Hamlin Lab focuses on growing and characterizing novel crystalline
+        materials to understand their physical properties under extreme conditions,
+        including high pressures and low temperatures.
+    </p>
+    <p>
+        I grow single crystals using flux growth methods and characterize them
+        through X-ray diffraction (XRD), resistivity measurements, and other
+        property measurements. I also keep up with equipment maintenance and
+        repairs as needed.
+    </p>
+    <img src="crystal.jpg" alt="Crystal sample under microscope">
+</section>
+<!-- COURSEWORK -->
+<section id="coursework">
+    <h2>Coursework</h2>
+    <h3>Degrees</h3>
+    <p>B.S. Physics | B.S. Mathematics — University of Florida</p>
+    <h3>Relevant Courses</h3>
+    <ul>
+        <li>Statistical Mechanics I</li>
+        <li>Introduction to Quantum Mechanics II</li>
+        <li>Introduction to Solid State Physics</li>
+    </ul>
+</section>
+<!-- CV -->
+<section id="cv">
+    <h2>CV / Resume</h2>
+    <a class="download-btn" href="cv.pdf" download>⬇ Download Full CV (PDF)</a>
+    <div class="featured">
+        <div class="featured-card">
+            <h3>Research Experience</h3>
+            <ul>
+                <li>Hamlin Lab, UF — Crystal Synthesis & Property Measurement (Oct 2024–Present)</li>
+                <li>REU, Penn State — Topological Insulator Characterization (May–July 2025)</li>
+            </ul>
+        </div>
+        <div class="featured-card">
+            <h3>Education</h3>
+            <ul>
+                <li>B.S. Physics & B.S. Math, University of Florida</li>
+                <li>A.A. Daytona State College</li>
+            </ul>
+        </div>
+    </div>
+</section>
 </body>
 </html>
